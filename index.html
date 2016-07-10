@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SMU Cum Laude</title>
+  <link rel="stylesheet" type="text/css" href="http://bootswatch.com/yeti/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/Dynatable/0.3.1/jquery.dynatable.min.css">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <h1 class="page-header"><strong>SMU Cum Laude</strong></h1>
+      <p class="text-primary">There are so many ways you can get your cum laude.</p>
+    </div>
+
+    <div class="row">
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>A</th>
+      <th>A-</th>
+      <th>B+</th>
+      <th>B</th>
+      <th>B-</th>
+      <th>C+</th>
+      <th>C</th>
+      <th>C-</th>
+      <th>CGPA</th>
+    </tr>
+  </thead>
+</table>
+
+    </div>
+
+  </div>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/Dynatable/0.3.1/jquery.dynatable.min.js"></script>
+
+<script>
+
+$('table').dynatable({});
+
+$('#mods-table').dynatable({
+  dataset: {
+    ajax: false,
+    ajaxUrl: 'modssmu.min.json',
+    ajaxOnLoad: true,
+    records: []
+  }
+});
+
+</script>
+
+</body>
+
+</html>
