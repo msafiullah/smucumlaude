@@ -47,11 +47,16 @@
 $.ajax({
   url: 'modssmu.min.json',
   success: function(data){
+    
     $('#mods-table').dynatable({
       dataset: {
         records: data.records
+      },
+       table: {
+        defaultColumnIdStyle: 'trimDash'
       }
     });
+
   }
 });
 
