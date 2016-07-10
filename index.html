@@ -18,7 +18,7 @@
 
     <div class="row">
 
-<table class="table">
+<table id="mods-table" class="table">
   <thead>
     <tr>
       <th>A</th>
@@ -44,14 +44,14 @@
 
 <script>
 
-$('table').dynatable({});
-
-$('#mods-table').dynatable({
-  dataset: {
-    ajax: false,
-    ajaxUrl: 'modssmu.min.json',
-    ajaxOnLoad: true,
-    records: []
+$.ajax({
+  url: 'modssmu.min.json',
+  success: function(data){
+    $('#mods-table').dynatable({
+      dataset: {
+        records: data.records
+      }
+    });
   }
 });
 
