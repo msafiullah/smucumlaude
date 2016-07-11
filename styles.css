@@ -11,3 +11,6 @@ table#mods-table {
     background-color: #e0e0e0;
   }
   
+  .jumbotron p {
+    font-size: 16px;
+  }
