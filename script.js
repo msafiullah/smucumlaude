@@ -66,7 +66,7 @@ function initDynatable() {
       },
       features: {
         search: false,
-        pushState: false
+        pushState: true
       },
       inputs: {
         queries: $('#filter-1, #filter-2, #filter-3, #filter-4, #filter-5, #filter-6, #filter-7, #filter-8, #filter-9')
