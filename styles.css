@@ -1,0 +1,13 @@
+table#mods-table {
+    margin-top: 5px;
+  }
+  
+  #mods-table thead,
+  #mods-table tfoot {
+    display: table-header-group;
+  }
+  
+  #mods-table tfoot {
+    background-color: #e0e0e0;
+  }
+  
