@@ -1,4 +1,3 @@
-var dynatable = null;
 var dataMods = null;
 
 $.ajax({
@@ -64,7 +63,9 @@ function initDynatable() {
       };
     })
     .dynatable({
-      dataset: dataMods,
+      dataset: {
+        records: dataMods
+      },
       table: {
         defaultColumnIdStyle: 'trimDash'
       },
