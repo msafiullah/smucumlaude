@@ -14,19 +14,14 @@ function filterData(name, record, value) {
   num = str.substr(numIndex);
 
   if (str.match(/^>=\s*\d/)) {
-    console.log('filter ' + name + ' greater than or equal to ' + num)
     return record[name] >= num;
   } else if (str.match(/^<=\s*\d/)) {
-    console.log('filter ' + name + ' less than or equal to ' + num)
     return record[name] <= num;
   } else if (str.match(/^>\s*\d/)) {
-    console.log('filter ' + name + ' greater than ' + num)
     return record[name] > num;
   } else if (str.match(/^<\s*\d/)) {
-    console.log('filter ' + name + ' less than ' + num)
     return record[name] < num;
   } else if (num) {
-    console.log('filter ' + name + ' equal to ' + num)
     return record[name] == num;
   }
 }
