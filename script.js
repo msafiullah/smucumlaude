@@ -5,6 +5,7 @@ $.ajax({
   url: 'modssmu.min.json',
   success: function(data) {
     dataMods = data.records;
+    initDynatable();
   }
 });
 
