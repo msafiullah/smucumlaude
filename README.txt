@@ -1,4 +1,7 @@
 HOW TO RUN THIS WEB APP?
 
-cd <path_to_this_folder>
-python -m SimpleHTTPServer 80
+On your terminal, execute the following commands.
+  cd <path_to_this_folder>
+  sudo python -m SimpleHTTPServer 80
+
+Then, visit http://localhost on your web browser.
